@@ -1,0 +1,12 @@
+try {
+    node {
+        stage('Checkout SCM') {
+            /* checkout code from Github
+            * from master branch
+            */
+            echo "Checkout code from SCM"
+            CheckoutSCM();
+        }
+    }
+    
+}
