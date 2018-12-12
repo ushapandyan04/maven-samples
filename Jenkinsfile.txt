@@ -1,7 +1,7 @@
 node {
     stage('Checkout') {
         echo "checkout code from github"
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/sushmabn/maven-samples.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/ushapandyan04/maven-samples.git']]])
         echo "checked "
     }
     stage('Build') {
